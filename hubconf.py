@@ -148,7 +148,7 @@ if __name__ == '__main__':
 model = custom(path='https://github.com/Aishice26/project/blob/main/best.pt')  # custom
 
     # Images
-    imgs = [
+imgs = [
         'data/images/zidane.jpg',  # filename
         Path('data/images/zidane.jpg'),  # Path
         'https://ultralytics.com/images/zidane.jpg',  # URI
@@ -157,8 +157,8 @@ model = custom(path='https://github.com/Aishice26/project/blob/main/best.pt')  #
         np.zeros((320, 640, 3))]  # numpy
 
     # Inference
-    results = model(imgs, size=320)  # batched inference
+ results = model(imgs, size=320)  # batched inference
 
     # Results
-    results.print()
-    results.save()
+ results.print()
+ results.save()
