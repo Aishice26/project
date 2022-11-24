@@ -11,7 +11,7 @@ Usage:
 import torch
 
 
-def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbose=True, device=None):
+def _create(name="https://github.com/Aishice26/project/blob/main/best.pt", pretrained=True, channels=3, classes=80, autoshape=True, verbose=True, device=None):
     """Creates or loads a YOLOv5 model
 
     Arguments:
@@ -73,7 +73,7 @@ def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbo
         raise Exception(s) from e
 
 
-def custom(path='path/to/model.pt', autoshape=True, _verbose=True, device=None):
+def custom(path='https://github.com/Aishice26/project/blob/main/best.pt', autoshape=True, _verbose=True, device=None):
     # YOLOv5 custom or local model
     return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
 
@@ -144,8 +144,8 @@ if __name__ == '__main__':
     print_args(vars(opt))
 
     # Model
-    model = _create(name=opt.model, pretrained=True, channels=3, classes=80, autoshape=True, verbose=True)
-    # model = custom(path='path/to/model.pt')  # custom
+#     model = _create(name=opt.model, pretrained=True, channels=3, classes=80, autoshape=True, verbose=True)
+     model = custom(path='https://github.com/Aishice26/project/blob/main/best.pt')  # custom
 
     # Images
     imgs = [
