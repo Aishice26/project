@@ -157,8 +157,8 @@ imgs = [
         np.zeros((320, 640, 3))]  # numpy
 
     # Inference
- results = model(imgs, size=320)  # batched inference
+results = model(imgs, size=320)  # batched inference
 
     # Results
- results.print()
- results.save()
+results.print()
+results.save()
