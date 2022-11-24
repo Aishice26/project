@@ -145,7 +145,7 @@ if __name__ == '__main__':
 
     # Model
 #     model = _create(name=opt.model, pretrained=True, channels=3, classes=80, autoshape=True, verbose=True)
-     model = custom(path='https://github.com/Aishice26/project/blob/main/best.pt')  # custom
+    model = custom(path='https://github.com/Aishice26/project/blob/main/best.pt')  # custom
 
     # Images
     imgs = [
